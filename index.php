@@ -55,3 +55,11 @@ if($acao == "update"){
     update($cod_pessoa,$nome, $sobrenome, $email, $celular, $fotografia, $conn);
 
 }
+
+#Rota do Delete
+if ($acao == "delete") {
+
+    $cod_pessoa = $_REQUEST["cod_pessoa"];
+    delete($cod_pessoa, $conn);
+
+}
